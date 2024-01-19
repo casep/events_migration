@@ -25,7 +25,6 @@ parser.add_argument(
 args = parser.parse_args()
 
 dfa = pd.read_csv(args.inputfilea)
-
 dfb = pd.read_csv(args.inputfileb)
 
 frames = [dfa, dfb]
