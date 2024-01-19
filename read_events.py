@@ -3,6 +3,7 @@ import argparse
 import sys
 from pathlib import Path  
 
+
 parser = argparse.ArgumentParser(description='Import the events data')
 parser.add_argument(
     '-ia', '--inputfilea', help='Input file A.',
