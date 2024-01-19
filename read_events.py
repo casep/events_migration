@@ -32,3 +32,4 @@ result = pd.concat(frames)
 
 result.to_csv(args.outputfile,index=False)  
 
+print('File processed')
