@@ -1,7 +1,11 @@
-import pandas as pd
+'''
+Load csv data to output bookings and events
+'''
+
 import argparse
 import sys
-from pathlib import Path  
+#from pathlib import Path
+import pandas as pd
 
 parser = argparse.ArgumentParser(description='Import the events data')
 parser.add_argument(
@@ -20,5 +24,4 @@ args = parser.parse_args()
 
 df = pd.read_csv(args.inputfile)
 
-df.to_csv(args.outputfile,index=False)  
-
+df.to_csv(args.outputfile,index=False)
